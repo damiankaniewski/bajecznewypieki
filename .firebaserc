@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "bajeczne-wypieki"
+  },
+  "targets": {
+    "bajeczne-wypieki": {
+      "hosting": {
+        "bajeczne-wypieki": [
+          "bajeczne-wypieki"
+        ]
+      }
+    }
+  }
+}
