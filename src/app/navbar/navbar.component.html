@@ -1,11 +1,25 @@
 <nav class="navbar">
+    <div class="navbar-item empty"></div>
+
     <div class="logo">
-        <img src="../../assets/images/logobiale.png" alt="Logo" style="width: 200px; height: 200px;">
+      <img src="../../assets/images/logoczarne.png" alt="Logo">
     </div>
-    <a routerLink="/" class="navbar-item">Strona główna</a>
-    <a routerLink="/cakes" class="navbar-item">Torty</a>
-    <a routerLink="/sweets" class="navbar-item">Słodkości</a>
-    <a routerLink="/flavors" class="navbar-item">Smaki</a>
-    <a routerLink="/about" class="navbar-item">O mnie</a>
-    <a routerLink="/contact" class="navbar-item">Kontakt</a>
+
+    <div class="navbar-item empty"></div>
+    <div class="navbar-item empty"></div>
+    <div class="navbar-item empty"></div>
+    <div class="navbar-item empty"></div>
+
+    <a routerLink="/" class="navbar-item" [ngClass]="{'active': router.url === '/'}">Strona główna</a>
+    <a routerLink="/cakes" class="navbar-item" [ngClass]="{'active': router.url === '/cakes'}">Torty</a>
+    <a routerLink="/sweets" class="navbar-item" [ngClass]="{'active': router.url === '/sweets'}">Słodkości</a>
+    <a routerLink="/flavors" class="navbar-item" [ngClass]="{'active': router.url === '/flavors'}">Smaki</a>
+    <a routerLink="/about" class="navbar-item" [ngClass]="{'active': router.url === '/about'}">O mnie</a>
+    <a routerLink="/contact" class="navbar-item" [ngClass]="{'active': router.url === '/contact'}">Kontakt</a>
+
+    <div class="navbar-item empty"></div>
+    <div class="navbar-item empty"></div>
+    <div class="navbar-item empty"></div>
+    <div class="navbar-item empty"></div>
   </nav>
+  
