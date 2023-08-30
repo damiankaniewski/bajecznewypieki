@@ -14,15 +14,16 @@ body, h1, h2, h3, p, ul, li {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 10px;
     font-size: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
 
 /* Styl dla logo */
 .logo img {
     width: 100px;
     height: auto;
+    cursor: pointer;
 }
 
 /* Styl dla poszczególnych elementów nawigacyjnych */
@@ -37,7 +38,7 @@ body, h1, h2, h3, p, ul, li {
 
 /* Efekt podświetlenia przy najechaniu */
 .navbar-item:hover {
-    border-color: lightgrey;
+    border-color: rgba(233, 233, 233, 1);
 }
 
 /* Styl dla aktywnego elementu nawigacyjnego */
