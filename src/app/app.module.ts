@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import {AngularFireModule } from '@angular/fire/compat';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { CakesComponent } from './cakes/cakes.component';
-import { SweetsComponent } from './sweets/sweets.component';
-import { FlavorsComponent } from './flavors/flavors.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
+import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
+
 
 var firebaseConfig = {
     projectId: 'bajeczne-wypieki',
@@ -28,18 +22,12 @@ var firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    CakesComponent,
-    SweetsComponent,
-    FlavorsComponent,
-    AboutComponent,
-    ContactComponent,
+    HeaderComponent,
+    BodyComponent,
     FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     provideStorage(() => getStorage())
   ],
