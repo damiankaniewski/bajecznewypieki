@@ -7,6 +7,8 @@ import {AngularFireModule } from '@angular/fire/compat';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CakesComponent } from './header/cakes/cakes.component';
 
 
 var firebaseConfig = {
@@ -25,11 +27,13 @@ var firebaseConfig = {
     HeaderComponent,
     BodyComponent,
     FooterComponent,
+    CakesComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
