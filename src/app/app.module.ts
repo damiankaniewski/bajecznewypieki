@@ -8,7 +8,11 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CakesComponent } from './header/cakes/cakes.component';
+import { CakesComponent } from './cakes/cakes.component';
+import { HomeComponent } from './home/home.component';
+import { SweetsComponent } from './sweets/sweets.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 var firebaseConfig = {
@@ -27,7 +31,11 @@ var firebaseConfig = {
     HeaderComponent,
     BodyComponent,
     FooterComponent,
-    CakesComponent
+    CakesComponent,
+    HomeComponent,
+    SweetsComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
