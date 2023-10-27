@@ -39,9 +39,9 @@
     margin-right: auto;
 }
 
+/* klasa active która załącza się przy aktywnym obiekcie. Dzięki temu że w .nav-item mamy transition dla transform i color działa nam prosta animacja */
 .active {
     color: #F2B8FF;
     transform: scale(1.1);
-    
 }
   
