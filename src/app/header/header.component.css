@@ -23,8 +23,8 @@
     margin: 0 5px;
     padding: 10px;
     color: black;
-    border-bottom: 3px solid transparent;
-    transition: border-color 0.3s, transform 0.3s;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, transform 0.3s, color 0.3s;
     transform: scale(1);
     font-size: 30px;
 }
@@ -38,3 +38,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.active {
+    color: #F2B8FF;
+    transform: scale(1.1);
+    
+}
+  

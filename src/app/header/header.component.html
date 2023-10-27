@@ -3,11 +3,9 @@
         <img src="../../assets/images/logoczarne.png">
     </div>
 
-
-    <a class="nav-item" routerLink="/home">Strona główna</a>
-    <a class="nav-item" routerLink="/cakes">Torty</a>
-    <a class="nav-item" routerLink="/sweets">Słodkości</a>
-    <a class="nav-item" routerLink="/about">O mnie</a>
-    <a class="nav-item" routerLink="/contact">Kontakt</a>
-
+    <a class="nav-item" [routerLink]="'/home'" [ngClass]="{'active': activeRoute === 'home'}">Strona główna</a>
+    <a class="nav-item" [routerLink]="'/cakes'" [ngClass]="{'active': activeRoute === 'cakes'}">Torty</a>
+    <a class="nav-item" [routerLink]="'/sweets'" [ngClass]="{'active': activeRoute === 'sweets'}">Słodkości</a>
+    <a class="nav-item" [routerLink]="'/about'" [ngClass]="{'active': activeRoute === 'about'}">O mnie</a>
+    <a class="nav-item" [routerLink]="'/contact'" [ngClass]="{'active': activeRoute === 'contact'}">Kontakt</a>
 </div>
