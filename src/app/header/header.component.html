@@ -4,7 +4,7 @@
     </div>
 
     <!-- ngClass ustawia nam klasę w zależności od zmiennej z pliku .ts, czyli na przykładzie home - jeśli zmienna activeRoute ma wartość "home" to nasz element a ma klasy "nav-item active" -->
-    <a class="nav-item" [routerLink]="'/'" [ngClass]="{'active': activeRoute === 'home'}">Strona główna</a>
+    <a class="nav-item" [routerLink]="'/'" [ngClass]="{'active': activeRoute === ''}">Strona główna</a>
     <a class="nav-item" [routerLink]="'/cakes'" [ngClass]="{'active': activeRoute === 'cakes'}">Torty</a>
     <a class="nav-item" [routerLink]="'/sweets'" [ngClass]="{'active': activeRoute === 'sweets'}">Słodkości</a>
     <a class="nav-item" [routerLink]="'/about'" [ngClass]="{'active': activeRoute === 'about'}">O mnie</a>
