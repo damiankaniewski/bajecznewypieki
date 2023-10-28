@@ -11,7 +11,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.img-container {}
+.img-container {
+    
+}
 
 .img-container img {
     width: 80px;
@@ -26,7 +28,7 @@
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s, transform 0.3s, color 0.3s;
     transform: scale(1);
-    font-size: 30px;
+    font-size: 1.3vw;
 }
 
 .nav-item:hover {
@@ -43,5 +45,6 @@
 .active {
     color: #F2B8FF;
     transform: scale(1.1);
+    filter: drop-shadow(2px 2px 1px #0000002f);
 }
   
