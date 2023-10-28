@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   ngOnInit() {
-    // You can access the DOM element and update its styles here
     const imageElement = document.querySelector('.main-photo') as HTMLElement;
     const centeredContainerElement = document.querySelector('.centered-container') as HTMLElement;
     if (imageElement) {
