@@ -9,6 +9,29 @@
     </div>
     <div class="description-container">      
         <h1>Moje Prace</h1>
-        <app-carousel></app-carousel>
+        <div class="images-row">
+            <div id="first" class="clickable-image" (click)="changeImage('first')">
+              <img [src]="getImagePath('first')" alt="image1">
+              <div class="gradient-white"></div>
+              <p>Torty Ślubne</p>
+            </div>
+            <div id="second" class="clickable-image" (click)="changeImage('second')">
+              <img [src]="getImagePath('second')" alt="image2">
+              <div class="gradient-white"></div>
+              <p>Torty Urodzinowe</p>
+            </div>
+            <div id="third" class="clickable-image" (click)="changeImage('third')">
+              <img [src]="getImagePath('third')" alt="image3">
+              <div class="gradient-white"></div>
+              <p>Torty Okazjonalne</p>
+            </div>
+            <div id="forth" class="clickable-image" (click)="changeImage('forth')">
+              <img [src]="getImagePath('forth')" alt="image4">
+              <div class="gradient-white"></div>
+              <p>Słodkości</p>
+            </div>
+          </div>
+          
+          
     </div>
 </div>
