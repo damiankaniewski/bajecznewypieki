@@ -5,7 +5,7 @@
 }
 
 .active{
-    opacity: 0.5!important;
+    opacity: 0.1!important;
     pointer-events: auto!important;
 }
 
@@ -15,7 +15,13 @@
     transition: transform 0.3s;
 }
 
+.active:hover{
+    opacity: 1!important;
+    transform: scale(1.2)!important;
+}
+
 #arrow img:hover{
     transform: scale(1.2);
 }
+
 
