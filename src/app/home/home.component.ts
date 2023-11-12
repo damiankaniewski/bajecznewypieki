@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
           image.classList.remove("fade-invisible");
         }
       },50)
-    }, 150)
+    }, 300)
     
   }
 }
