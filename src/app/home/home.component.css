@@ -63,7 +63,7 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    height: 90vh;
+    height: 95vh;
 }
 
 #first, #second, #third, #forth{
@@ -74,7 +74,6 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    max-height: calc(100vh-100px);
 }
 
 #first:hover, #second:hover, #third:hover, #forth:hover{

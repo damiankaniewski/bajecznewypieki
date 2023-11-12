@@ -1,0 +1,21 @@
+#arrow{
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.active{
+    opacity: 0.5!important;
+    pointer-events: auto!important;
+}
+
+#arrow img{
+    width: 80px;
+    transform: scale(1.0);
+    transition: transform 0.3s;
+}
+
+#arrow img:hover{
+    transform: scale(1.2);
+}
+

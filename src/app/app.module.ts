@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { SweetsComponent } from './sweets/sweets.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ScrollbackComponent } from './scrollback/scrollback.component';
 
 
 var firebaseConfig = {
@@ -35,7 +36,8 @@ var firebaseConfig = {
     HomeComponent,
     SweetsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ScrollbackComponent
   ],
   imports: [
     BrowserModule,
