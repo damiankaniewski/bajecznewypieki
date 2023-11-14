@@ -1,0 +1,66 @@
+.images-row{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 95vh;
+}
+
+#first, #second, #third, #forth{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#first:hover, #second:hover, #third:hover, #forth:hover{
+    cursor: pointer;
+}
+
+#first:hover img, #second:hover img, #third:hover img, #forth:hover img{
+    transform: scale(0.95);
+}
+
+.images-row p {
+    position: absolute;
+    top: 0px;
+    font-size: 2.5vw;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.gradient-white {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 90%);
+ }
+
+ .images-row img {
+    position: absolute;
+    object-fit: contain;
+    transform: scale(1.0);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+  }
+
+  .animated-image img.active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  @keyframes fadeImage {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

@@ -4,40 +4,21 @@
         <div class="centered-container">
             <img src="assets/images/logo/logoWhite.png" alt="logo" class="main-logo">
             <h1>Wyśmienitym smakiem i niespotykanym wyglądem moje torty zachwycają od 2014 roku</h1>
-            <p>Bajeczne Wypieki to pracownia tortów artystycznych, w której rodzą się wyjątkowe smakołyki. Tworzę torty o niepowtarzalnym designie, łącząc kreatywność z doskonałym smakiem. Moje dzieła to nie tylko torty, to też magia wypieków, która zachwyci każde podniebienie i oczy, tworząc niezapomniane chwile na każdą okazję. <br>Serdecznie zapraszam!</p>
+            <p><b>Bajeczne Wypieki</b> to pracownia tortów artystycznych, w której rodzą się wyjątkowe smakołyki. Tworzę torty o niepowtarzalnym designie, łącząc kreatywność z doskonałym smakiem. Moje dzieła to nie tylko torty, to też magia wypieków, która zachwyci każde podniebienie i oczy, tworząc niezapomniane chwile na każdą okazję. <br><b>Serdecznie zapraszam!</b></p>
         </div>
     </div>
     <div class="description-container">      
         <h1>Moje Prace</h1>
-        <div class="images-row">
-          <div id="first" class="animated-image">
-            <ng-container *ngFor="let imagePath of imagePaths['first']; let i = index">
-              <img [src]="imagePath" alt="image1_{{i + 1}}" [ngClass]="{'active': i === currentImageIndex}">
-            </ng-container>
-            <div class="gradient-white"></div>
-            <p>Torty Ślubne</p>
-          </div>
-          <div id="second" class="animated-image">
-            <ng-container *ngFor="let imagePath of imagePaths['second']; let i = index">
-              <img [src]="imagePath" alt="image2_{{i + 1}}" [ngClass]="{'active': i === currentImageIndex}">
-            </ng-container>
-            <div class="gradient-white"></div>
-            <p>Torty dla Dzieci</p>
-          </div>
-          <div id="third" class="animated-image">
-            <ng-container *ngFor="let imagePath of imagePaths['third']; let i = index">
-              <img [src]="imagePath" alt="image3_{{i + 1}}" [ngClass]="{'active': i === currentImageIndex}">
-            </ng-container>
-            <div class="gradient-white"></div>
-            <p>Torty na Chrzest</p>
-          </div>
-          <div id="forth" class="animated-image">
-            <ng-container *ngFor="let imagePath of imagePaths['forth']; let i = index">
-              <img [src]="imagePath" alt="image4_{{i + 1}}" [ngClass]="{'active': i === currentImageIndex}">
-            </ng-container>
-            <div class="gradient-white"></div>
-            <p>Torty 3D</p>
-          </div>
-        </div>
+        <app-portfolio></app-portfolio>
+    </div>
+    <div class="information-row">
+      <div class="questions">
+        <p>Najczęściej zadawane pytania</p>
+        <app-faq></app-faq>
+      </div>
+      <div class="facebook-link">
+        <p>Strona na Facebook'u</p>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FBAJECZNE-WYPIEKI-Pracownia-Tort%25C3%25B3w-Artystycznych-Anna-Szkudlarska-100063505481504%2F%3Flocale%3Dpl_PL&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
     </div>
 </div>

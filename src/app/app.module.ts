@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppComponent } from './app.component';
 //import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideStorage, getStorage } from '@angular/fire/storage';
@@ -14,6 +15,8 @@ import { SweetsComponent } from './sweets/sweets.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollbackComponent } from './scrollback/scrollback.component';
+import { FaqComponent } from './home/faq/faq.component';
+import { PortfolioComponent } from './home/portfolio/portfolio.component';
 
 
 var firebaseConfig = {
@@ -37,13 +40,16 @@ var firebaseConfig = {
     SweetsComponent,
     AboutComponent,
     ContactComponent,
-    ScrollbackComponent
+    ScrollbackComponent,
+    FaqComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
     provideStorage(() => getStorage()),
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

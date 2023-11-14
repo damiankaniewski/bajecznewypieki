@@ -1,0 +1,44 @@
+
+<div class="faq">
+    <div class="question" (click)="toggleAnswer(0)" [ngClass]="{'question-active': showAnswer[0]}">
+        Jak złożyć zamówienie?
+    </div>
+    <div class="answer" [ngClass]="{'answer-active': showAnswer[0]}">
+        Kontaktując się <b>telefonicznie</b> lub poprzez <b>Facebook</b> lub <b>Instagram</b>.
+    </div>
+</div>
+<hr><div class="faq">
+    <div class="question" (click)="toggleAnswer(1)" [ngClass]="{'question-active': showAnswer[1]}">
+        Z czego robione są torty i dekoracje?
+    </div>
+    <div class="answer" [ngClass]="{'answer-active': showAnswer[1]}">
+        Torty wykonuję tylko z <b>naturalnych składników</b>. Dekoracje robione są ręcznie, z masy cukrowej.
+    </div>
+</div>
+<hr>
+<div class="faq">
+    <div class="question" (click)="toggleAnswer(2)" [ngClass]="{'question-active': showAnswer[2]}">
+        Ile wcześnie należy złożyć zamówienie?
+    </div>
+    <div class="answer" [ngClass]="{'answer-active': showAnswer[2]}">
+        Słodkości najlepiej zamawiać z <b>2-3 tygodniowym wyprzedzeniem</b>, ale można pytać również kilka dni przed terminem, może będzie miejsce. Większe zamówienia na <i>torty ślubne</i> lub <i>słodkie stoły</i> trzeba zamawiać dużo wcześniej.
+    </div>
+</div>
+<hr>
+<div class="faq">
+    <div class="question" (click)="toggleAnswer(3)" [ngClass]="{'question-active': showAnswer[3]}">
+        Ile kosztują torty?
+    </div>
+    <div class="answer" [ngClass]="{'answer-active': showAnswer[3]}">
+        Torty są <b>wyceniane indywidualnie</b> według ilości porcji, rodzaju kremu i dekoracji. Zapraszam do kontaktu w sprawie wyceny.
+    </div>
+</div>
+<hr>
+<div class="faq">
+    <div class="question" (click)="toggleAnswer(4)" [ngClass]="{'question-active': showAnswer[4]}">
+        Czy można wziąć tort na fakturę?
+    </div>
+    <div class="answer" [ngClass]="{'answer-active': showAnswer[4]}">
+        <b>Tak</b>. Można wziąć zarówno na fakturę jak i paragon.
+    </div>
+</div>
