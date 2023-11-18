@@ -1,3 +1,134 @@
-.main-container{
+.main-container {
+    position: relative;
+    background-color: white;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-top: 100px;
+    overflow: hidden;
 }
+
+.main-photo-container{
+    width: 100%;
+    overflow: hidden; /* Ukrycie treści wykraczającej poza kontener */
+}
+
+.main-photo {
+    position: absolute;
+    display:flex;
+    top: 0;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    opacity: 0;
+    filter: blur(0px) brightness(1);
+    transition: opacity 2s, filter 2s;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+    z-index: 2;
+}
+
+.contact-overlay{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.social-media-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logos img {
+    padding: 20px;
+    width: 70%;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.5));
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.logos img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.contact-information p{
+    line-height: 80%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact-information h1{
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: 100;
+    text-align: center;
+}
+
+.adres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.map-button{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 70%;
+    border: 1px solid white;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.map-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.map-button a{
+    color: white;
+}
+
+
+.contact-information hr{
+    width: 50%;
+}
+

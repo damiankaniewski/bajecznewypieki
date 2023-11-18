@@ -36,19 +36,6 @@ export class PortfolioComponent implements OnInit {
   currentImageIndex: number = 0;
 
   ngOnInit() {
-    const imageElement = document.querySelector('.main-photo') as HTMLElement;
-    const centeredContainerElement = document.querySelector('.centered-container') as HTMLElement;
-    if (imageElement) {
-      
-      setTimeout(() => {
-        imageElement.style.opacity = '1';
-        imageElement.style.filter = 'blur(10px) brightness(0.5)';
-      }, 100);
-      setTimeout(() => {
-        centeredContainerElement.style.opacity = '1';
-      }, 1000);
-    }
-
     this.startImageSlideshow();
   }
 

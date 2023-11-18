@@ -11,3 +11,24 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #efb5ff #e3e3e3;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #e3e3e3;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #efb5ff;
+    border-radius: 5px;
+  }

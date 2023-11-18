@@ -63,25 +63,33 @@
 
 .information-row{
     padding-top: 50px;
+    padding-bottom: 50px;
     background-color: white;
     color: black;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
-.questions p{
+.questions p, h1{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
     padding: 10px 10px 10px 80px;
-    font-size: 2.5vw;
+    font-size: 3rem;
     font-weight: bold;
+}
+
+.questions h1{
+    padding-top: 30px;
+    font-size: 2rem;
 }
 
 .facebook-link p{
     padding: 10px;
-    font-size: 2.5vw;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -94,7 +102,7 @@
 }
 
 .facebook-link iframe{
-    margin: 50px;
+    margin: 20px;
     border-radius: 5px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
 }
