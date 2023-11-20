@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: center;
     text-align: left;
-    font-size: 2vw;
+    font-size: 2rem;
     line-height: 100%;
     cursor: pointer;
     transition:color 0.5s ease-in-out;
@@ -20,7 +20,7 @@
 .answer{
     pointer-events: none;
     text-align: left;
-    font-size: 1vw;
+    font-size: 1.3rem;
     height: 0px;
     opacity: 0;
     line-height: 110%;
@@ -33,7 +33,7 @@
 
 .answer-active{
     pointer-events: auto;
-    height: 60px;
+    height: 100%;
     opacity: 1;
 }
 

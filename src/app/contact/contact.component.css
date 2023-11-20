@@ -68,10 +68,18 @@
     align-items: center;
 }
 
+.logos a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 30px;
+}
+
 
 .logos img {
-    padding: 20px;
-    width: 70%;
+    width: 100%;
     filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.5));
     transform: scale(1);
     transition: transform 0.3s;
@@ -87,7 +95,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 .contact-information p{
@@ -113,14 +121,20 @@
 
 .map-button{
     background-color: rgba(0, 0, 0, 0.3);
-    width: 70%;
+    width: 100%;
     border: 1px solid white;
-    transition: transform 0.2s, background-color 0.2s;
+    border-radius: 3px;
+    transition: transform 0.2s, background-color 0.2s, border 0.2s;
 }
 .map-button:hover{
     cursor: pointer;
     transform: scale(1.1);
     background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #F2B8FF;
+}
+
+.map-text{
+    margin: 15px 10px 15px 10px;
 }
 
 .map-button a{

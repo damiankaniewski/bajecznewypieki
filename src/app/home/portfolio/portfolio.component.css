@@ -20,7 +20,7 @@
 }
 
 #first:hover img, #second:hover img, #third:hover img, #forth:hover img{
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 .images-row p {

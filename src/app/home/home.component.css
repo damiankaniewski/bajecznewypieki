@@ -9,6 +9,7 @@
 
 .main-photo {
     width: 100%;
+    height: 100vh;
     opacity: 0;
     filter: blur(0px) brightness(0.5);
     transition: opacity 3s, filter 5s;
@@ -21,6 +22,7 @@
     align-items: center;
     opacity: 0;
     width: 100%;
+    height: 95vh;
     color:white;
     position: absolute;
     top: 50%;
@@ -30,7 +32,7 @@
 }
 
 .main-logo{
-    width: 15%;
+    width: 20rem;
     padding: 0;
     filter: drop-shadow(5px 5px 3px #222);
     transform: scale(1);
@@ -41,18 +43,17 @@
 }
 
 .centered-container h1 {
-    font-size: 1.9vw;
+    font-size: 2.3rem;
     filter: drop-shadow(5px 5px 3px #222);
 }
 
 .centered-container p {
     width: 85%;
-    font-size: 1vw;
+    font-size: 1.2rem;
     line-height: 130%;
     font-weight: 100;
     filter: drop-shadow(3px 3px 3px #222);
 }
-
 
 .description-container h1 {
     font-size: 3vw;
@@ -72,17 +73,18 @@
     justify-content: center;
 }
 
-.questions p, h1{
+.questions h1, .questions-p{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    text-align: left;
+    text-align: center;
     padding: 10px 10px 10px 80px;
     font-size: 3rem;
     font-weight: bold;
 }
 
 .questions h1{
+    text-align: left;
     padding-top: 30px;
     font-size: 2rem;
 }
@@ -98,6 +100,9 @@
 }
 
 .facebook-link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 50%;
 }
 
